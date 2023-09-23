@@ -36,3 +36,7 @@ enum Gender: String, Codable {
     case male = "male"
     case nA = "n/a"
 }
+
+struct Planets {
+    // TODO: planets would go here
+}

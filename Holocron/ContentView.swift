@@ -5,16 +5,35 @@ import UsefulDecode
 // 1. Protocol-based
 // 2. Bag of closures
 
-protocol SWAPIClientProtocol {
-    func fetchPeople() async throws -> People
+struct SWAPIClient {
+    var fetchPeople: () async throws -> People
+    var fetchPlanets: () async throws -> Planets
 }
 
-class SWAPIClient: SWAPIClientProtocol {
-    func fetchPeople() async throws -> People {
-        let url = URL(string: "https://swapi.dev/api/people/")!
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let people = try JSONDecoder().decodeWithBetterErrors(People.self, from: data)
-        return people
+extension SWAPIClient {
+    static var live: Self {
+        .init(
+            fetchPeople: {
+                let url = URL(string: "https://swapi.dev/api/people/")!
+                let (data, _) = try await URLSession.shared.data(from: url)
+                let people = try JSONDecoder().decodeWithBetterErrors(People.self, from: data)
+                return people
+            },
+            fetchPlanets: {
+                .init()
+            }
+        )
+    }
+
+    static var test: Self {
+        .init(
+            fetchPeople: {
+                fatalError("fetchPeople is not implemented")
+            },
+            fetchPlanets: {
+                fatalError("fetchPlanets is not implemented")
+            }
+        )
     }
 }
 
@@ -30,9 +49,9 @@ final class ViewModel: ObservableObject {
     @Published
     var state: LoadingState = .initial
 
-    let client: any SWAPIClientProtocol
+    let client: SWAPIClient
 
-    init(client: any SWAPIClientProtocol) {
+    init(client: SWAPIClient) {
         self.client = client
     }
 
@@ -51,7 +70,7 @@ final class ViewModel: ObservableObject {
 
 struct ContentView: View {
 
-    @StateObject var viewModel = ViewModel(client: SWAPIClient())
+    @StateObject var viewModel = ViewModel(client: .live)
 
     var body: some View {
         Group {

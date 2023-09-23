@@ -4,7 +4,11 @@ import XCTest
 final class HolocronTests: XCTestCase {
 
     func testLoadData() async {
-        let viewModel = ViewModel(client: FakeClientSuccess())
+        var client = SWAPIClient.test
+        client.fetchPeople = {
+            .init(people: [.luke])
+        }
+        let viewModel = ViewModel(client: client)
 
         XCTAssertEqual(viewModel.state, .initial)
 
@@ -14,7 +18,16 @@ final class HolocronTests: XCTestCase {
     }
 
     func testLoadData_error() async {
-        let viewModel = ViewModel(client: FakeClientFailure())
+        var client = SWAPIClient.test
+        client.fetchPeople = {
+            struct FailureToLoad: Error, CustomStringConvertible {
+                var description: String {
+                    "Failed to load."
+                }
+            }
+            throw FailureToLoad()
+        }
+        let viewModel = ViewModel(client: client)
         XCTAssertEqual(viewModel.state, .initial)
 
         await viewModel.loadData()
@@ -44,22 +57,5 @@ extension Person {
             edited: "2014-12-20T21:17:56.891000Z",
             url: "https://swapi.dev/api/people/1/"
         )
-    }
-}
-
-private final class FakeClientSuccess: SWAPIClientProtocol {
-    func fetchPeople() async throws -> People {
-        .init(people: [.luke])
-    }
-}
-
-private final class FakeClientFailure: SWAPIClientProtocol {
-    func fetchPeople() async throws -> People {
-        struct FailureToLoad: Error, CustomStringConvertible {
-            var description: String {
-                "Failed to load."
-            }
-        }
-        throw FailureToLoad()
     }
 }
