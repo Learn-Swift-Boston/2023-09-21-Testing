@@ -49,17 +49,11 @@ final class ViewModel: ObservableObject {
     @Published
     var state: LoadingState = .initial
 
-    let client: SWAPIClient
-
-    init(client: SWAPIClient) {
-        self.client = client
-    }
-
     @MainActor
     func loadData() async {
         state = .loading
         do {
-            let people = try await client.fetchPeople()
+            let people = try await Current.client.fetchPeople()
             self.state = .loaded(people)
         } catch {
             self.state = .failed(error: String(describing: error))
@@ -70,7 +64,7 @@ final class ViewModel: ObservableObject {
 
 struct ContentView: View {
 
-    @StateObject var viewModel = ViewModel(client: .live)
+    @StateObject var viewModel = ViewModel()
 
     var body: some View {
         Group {

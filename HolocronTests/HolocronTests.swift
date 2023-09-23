@@ -4,11 +4,10 @@ import XCTest
 final class HolocronTests: XCTestCase {
 
     func testLoadData() async {
-        var client = SWAPIClient.test
-        client.fetchPeople = {
+        Current.client.fetchPeople = {
             .init(people: [.luke])
         }
-        let viewModel = ViewModel(client: client)
+        let viewModel = ViewModel()
 
         XCTAssertEqual(viewModel.state, .initial)
 
@@ -18,8 +17,7 @@ final class HolocronTests: XCTestCase {
     }
 
     func testLoadData_error() async {
-        var client = SWAPIClient.test
-        client.fetchPeople = {
+        Current.client.fetchPeople = {
             struct FailureToLoad: Error, CustomStringConvertible {
                 var description: String {
                     "Failed to load."
@@ -27,7 +25,7 @@ final class HolocronTests: XCTestCase {
             }
             throw FailureToLoad()
         }
-        let viewModel = ViewModel(client: client)
+        let viewModel = ViewModel()
         XCTAssertEqual(viewModel.state, .initial)
 
         await viewModel.loadData()

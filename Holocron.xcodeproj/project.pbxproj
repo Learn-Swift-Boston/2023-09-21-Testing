@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CD03D50B2ABCE177006B11FF /* HolocronApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D50A2ABCE177006B11FF /* HolocronApp.swift */; };
-		CD03D50D2ABCE177006B11FF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D50C2ABCE177006B11FF /* Models.swift */; };
 		CD03D50F2ABCE178006B11FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD03D50E2ABCE178006B11FF /* Assets.xcassets */; };
 		CD03D5122ABCE178006B11FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD03D5112ABCE178006B11FF /* Preview Assets.xcassets */; };
 		CD03D51D2ABCE178006B11FF /* HolocronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D51C2ABCE178006B11FF /* HolocronTests.swift */; };
-		CD03D5362ABCE190006B11FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D5352ABCE190006B11FF /* ContentView.swift */; };
 		CD03D5392ABCE1A3006B11FF /* UsefulDecode in Frameworks */ = {isa = PBXBuildFile; productRef = CD03D5382ABCE1A3006B11FF /* UsefulDecode */; };
+		CD03D53B2ABCF054006B11FF /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D53A2ABCF054006B11FF /* World.swift */; };
+		CDD770E02ABF6D4100B963BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D5352ABCE190006B11FF /* ContentView.swift */; };
+		CDD770E22ABF6D5600B963BB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD770E12ABF6D5600B963BB /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 /* Begin PBXFileReference section */
 		CD03D5072ABCE177006B11FF /* Holocron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holocron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD03D50A2ABCE177006B11FF /* HolocronApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolocronApp.swift; sourceTree = "<group>"; };
-		CD03D50C2ABCE177006B11FF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CD03D50E2ABCE178006B11FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD03D5112ABCE178006B11FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD03D5132ABCE178006B11FF /* Holocron.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Holocron.entitlements; sourceTree = "<group>"; };
 		CD03D5182ABCE178006B11FF /* HolocronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolocronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD03D51C2ABCE178006B11FF /* HolocronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolocronTests.swift; sourceTree = "<group>"; };
 		CD03D5352ABCE190006B11FF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD03D53A2ABCF054006B11FF /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		CDD770E12ABF6D5600B963BB /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 			children = (
 				CD03D50A2ABCE177006B11FF /* HolocronApp.swift */,
 				CD03D5352ABCE190006B11FF /* ContentView.swift */,
-				CD03D50C2ABCE177006B11FF /* Models.swift */,
+				CDD770E12ABF6D5600B963BB /* Models.swift */,
+				CD03D53A2ABCF054006B11FF /* World.swift */,
 				CD03D50E2ABCE178006B11FF /* Assets.xcassets */,
 				CD03D5132ABCE178006B11FF /* Holocron.entitlements */,
 				CD03D5102ABCE178006B11FF /* Preview Content */,
@@ -210,9 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD03D5362ABCE190006B11FF /* ContentView.swift in Sources */,
-				CD03D50D2ABCE177006B11FF /* Models.swift in Sources */,
+				CDD770E02ABF6D4100B963BB /* ContentView.swift in Sources */,
+				CD03D53B2ABCF054006B11FF /* World.swift in Sources */,
 				CD03D50B2ABCE177006B11FF /* HolocronApp.swift in Sources */,
+				CDD770E22ABF6D5600B963BB /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,11 @@ import SwiftUI
 struct HolocronApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isTesting {
+                EmptyView()
+            } else {
+                ContentView()
+            }
         }
     }
 }
