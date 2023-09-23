@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "usefuldecode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ZevEisenberg/UsefulDecode.git",
+      "state" : {
+        "revision" : "140587e34fddf4f4397d31275e8c7ceaeba5e311",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD03D50B2ABCE177006B11FF /* HolocronApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D50A2ABCE177006B11FF /* HolocronApp.swift */; };
+		CD03D50D2ABCE177006B11FF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D50C2ABCE177006B11FF /* Models.swift */; };
+		CD03D50F2ABCE178006B11FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD03D50E2ABCE178006B11FF /* Assets.xcassets */; };
+		CD03D5122ABCE178006B11FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD03D5112ABCE178006B11FF /* Preview Assets.xcassets */; };
+		CD03D51D2ABCE178006B11FF /* HolocronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D51C2ABCE178006B11FF /* HolocronTests.swift */; };
+		CD03D5362ABCE190006B11FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03D5352ABCE190006B11FF /* ContentView.swift */; };
+		CD03D5392ABCE1A3006B11FF /* UsefulDecode in Frameworks */ = {isa = PBXBuildFile; productRef = CD03D5382ABCE1A3006B11FF /* UsefulDecode */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD03D5192ABCE178006B11FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD03D4FF2ABCE177006B11FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD03D5062ABCE177006B11FF;
+			remoteInfo = Holocron;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD03D5072ABCE177006B11FF /* Holocron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holocron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD03D50A2ABCE177006B11FF /* HolocronApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolocronApp.swift; sourceTree = "<group>"; };
+		CD03D50C2ABCE177006B11FF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CD03D50E2ABCE178006B11FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD03D5112ABCE178006B11FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD03D5132ABCE178006B11FF /* Holocron.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Holocron.entitlements; sourceTree = "<group>"; };
+		CD03D5182ABCE178006B11FF /* HolocronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolocronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD03D51C2ABCE178006B11FF /* HolocronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolocronTests.swift; sourceTree = "<group>"; };
+		CD03D5352ABCE190006B11FF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD03D5042ABCE177006B11FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD03D5392ABCE1A3006B11FF /* UsefulDecode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD03D5152ABCE178006B11FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD03D4FE2ABCE177006B11FF = {
+			isa = PBXGroup;
+			children = (
+				CD03D5092ABCE177006B11FF /* Holocron */,
+				CD03D51B2ABCE178006B11FF /* HolocronTests */,
+				CD03D5082ABCE177006B11FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD03D5082ABCE177006B11FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD03D5072ABCE177006B11FF /* Holocron.app */,
+				CD03D5182ABCE178006B11FF /* HolocronTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD03D5092ABCE177006B11FF /* Holocron */ = {
+			isa = PBXGroup;
+			children = (
+				CD03D50A2ABCE177006B11FF /* HolocronApp.swift */,
+				CD03D5352ABCE190006B11FF /* ContentView.swift */,
+				CD03D50C2ABCE177006B11FF /* Models.swift */,
+				CD03D50E2ABCE178006B11FF /* Assets.xcassets */,
+				CD03D5132ABCE178006B11FF /* Holocron.entitlements */,
+				CD03D5102ABCE178006B11FF /* Preview Content */,
+			);
+			path = Holocron;
+			sourceTree = "<group>";
+		};
+		CD03D5102ABCE178006B11FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD03D5112ABCE178006B11FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD03D51B2ABCE178006B11FF /* HolocronTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD03D51C2ABCE178006B11FF /* HolocronTests.swift */,
+			);
+			path = HolocronTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD03D5062ABCE177006B11FF /* Holocron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD03D52C2ABCE178006B11FF /* Build configuration list for PBXNativeTarget "Holocron" */;
+			buildPhases = (
+				CD03D5032ABCE177006B11FF /* Sources */,
+				CD03D5042ABCE177006B11FF /* Frameworks */,
+				CD03D5052ABCE177006B11FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Holocron;
+			packageProductDependencies = (
+				CD03D5382ABCE1A3006B11FF /* UsefulDecode */,
+			);
+			productName = Holocron;
+			productReference = CD03D5072ABCE177006B11FF /* Holocron.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD03D5172ABCE178006B11FF /* HolocronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD03D52F2ABCE178006B11FF /* Build configuration list for PBXNativeTarget "HolocronTests" */;
+			buildPhases = (
+				CD03D5142ABCE178006B11FF /* Sources */,
+				CD03D5152ABCE178006B11FF /* Frameworks */,
+				CD03D5162ABCE178006B11FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD03D51A2ABCE178006B11FF /* PBXTargetDependency */,
+			);
+			name = HolocronTests;
+			productName = HolocronTests;
+			productReference = CD03D5182ABCE178006B11FF /* HolocronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD03D4FF2ABCE177006B11FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CD03D5062ABCE177006B11FF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CD03D5172ABCE178006B11FF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CD03D5062ABCE177006B11FF;
+					};
+				};
+			};
+			buildConfigurationList = CD03D5022ABCE177006B11FF /* Build configuration list for PBXProject "Holocron" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD03D4FE2ABCE177006B11FF;
+			packageReferences = (
+				CD03D5372ABCE1A3006B11FF /* XCRemoteSwiftPackageReference "UsefulDecode" */,
+			);
+			productRefGroup = CD03D5082ABCE177006B11FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD03D5062ABCE177006B11FF /* Holocron */,
+				CD03D5172ABCE178006B11FF /* HolocronTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD03D5052ABCE177006B11FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD03D5122ABCE178006B11FF /* Preview Assets.xcassets in Resources */,
+				CD03D50F2ABCE178006B11FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD03D5162ABCE178006B11FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD03D5032ABCE177006B11FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD03D5362ABCE190006B11FF /* ContentView.swift in Sources */,
+				CD03D50D2ABCE177006B11FF /* Models.swift in Sources */,
+				CD03D50B2ABCE177006B11FF /* HolocronApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD03D5142ABCE178006B11FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD03D51D2ABCE178006B11FF /* HolocronTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD03D51A2ABCE178006B11FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD03D5062ABCE177006B11FF /* Holocron */;
+			targetProxy = CD03D5192ABCE178006B11FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD03D52A2ABCE178006B11FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD03D52B2ABCE178006B11FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CD03D52D2ABCE178006B11FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Holocron/Holocron.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Holocron/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KJHM26Y46;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeveisenberg.Holocron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD03D52E2ABCE178006B11FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Holocron/Holocron.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Holocron/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KJHM26Y46;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeveisenberg.Holocron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CD03D5302ABCE178006B11FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KJHM26Y46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeveisenberg.HolocronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Holocron.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Holocron";
+			};
+			name = Debug;
+		};
+		CD03D5312ABCE178006B11FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KJHM26Y46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeveisenberg.HolocronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Holocron.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Holocron";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD03D5022ABCE177006B11FF /* Build configuration list for PBXProject "Holocron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD03D52A2ABCE178006B11FF /* Debug */,
+				CD03D52B2ABCE178006B11FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD03D52C2ABCE178006B11FF /* Build configuration list for PBXNativeTarget "Holocron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD03D52D2ABCE178006B11FF /* Debug */,
+				CD03D52E2ABCE178006B11FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD03D52F2ABCE178006B11FF /* Build configuration list for PBXNativeTarget "HolocronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD03D5302ABCE178006B11FF /* Debug */,
+				CD03D5312ABCE178006B11FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD03D5372ABCE1A3006B11FF /* XCRemoteSwiftPackageReference "UsefulDecode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZevEisenberg/UsefulDecode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD03D5382ABCE1A3006B11FF /* UsefulDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD03D5372ABCE1A3006B11FF /* XCRemoteSwiftPackageReference "UsefulDecode" */;
+			productName = UsefulDecode;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD03D4FF2ABCE177006B11FF /* Project object */;
+}
